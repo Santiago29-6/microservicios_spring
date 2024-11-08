@@ -14,4 +14,6 @@ public interface UserService {
     Optional<User> findByUsername(String username);
 
     void chageRole(Role newRole, String username);
+
+    User findByUsernameReturnToken(String username);
 }

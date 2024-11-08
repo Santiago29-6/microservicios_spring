@@ -1,6 +1,7 @@
 package com.santi.spring_microservice_3_api_get_gateway.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,6 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.santi.spring_microservice_3_api_get_gateway.model.Role;
 import com.santi.spring_microservice_3_api_get_gateway.security.UserPrincipal;
 import com.santi.spring_microservice_3_api_get_gateway.service.UserService;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 @RestController
 @RequestMapping("api/user")
@@ -24,4 +28,10 @@ public class UserController {
         return ResponseEntity.ok(true);
         
     }
+
+    @GetMapping()
+    public ResponseEntity<?> getCurrentUser(@AuthenticationPrincipal UserPrincipal userPrincipal) {
+        return new ResponseEntity<>(userService.findByUsernameReturnToken(userPrincipal.getUsername()), HttpStatus.OK);
+    }
+    
 }
