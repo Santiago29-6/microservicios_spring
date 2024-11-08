@@ -13,18 +13,18 @@ Este proyecto implementa una arquitectura de microservicios con Spring Boot, don
 7. [Contribución](#contribución)
 8. [Licencia](#licencia)
 
-##📝Descripción del Proyecto
+## 📝Descripción del Proyecto
 
 Este sistema se divide en 4 microservicios que gestionan la información de inmuebles y compras, realizan autenticación de usuarios con tokens JWT, y usan el servidor Eureka para el descubrimiento de servicios. La arquitectura se basa en Spring Boot v3.3.5-SNAPSHOT.
 
-##Arquitectura de Microservicios
+## Arquitectura de Microservicios
 
 - **Servicio de Inmuebles**: Gestiona la información de inmuebles. Utiliza una base de datos MySQL v8.4 para almacenamiento.
 - **Servicio de Compras**: Almacena temporalmente los detalles de compra de inmuebles. Utiliza H2 como base de datos en memoria.
 - **API Gateway**: Intermediario entre los clientes y los servicios, para consultar, almacenar y eliminar información. Gestiona los usuarios en una base de datos PostgreSQL y maneja autenticación con JWT para controlar permisos de acceso (roles `admin` y `user`).
 - **Servidor Eureka**: Actúa como servidor de descubrimiento para acceder a los servicios de forma dinámica y facilitar la escalabilidad.
 
-##📝 Requisitos
+## 📝Requisitos
 
 - **Java** 17 o superior
 - **Spring Boot** 3.3.5-SNAPSHOT
@@ -34,7 +34,7 @@ Este sistema se divide en 4 microservicios que gestionan la información de inmu
 - **H2** en memoria para almacenamiento temporal
 - **JWT** para autenticación
 
-## ⬇️ Instalación y Configuración
+## ⬇️Instalación y Configuración
 
 1. **Clona el repositorio**:
    ```bash
@@ -87,7 +87,7 @@ Este sistema se divide en 4 microservicios que gestionan la información de inmu
        CONNECTION LIMIT = -1;
        ```
      - Sal de la consola de PostgreSQL ejecutando `\q` y luego `exit` para salir del contenedor.
-## ⏯️ Uso
+## ⏯️Uso
 
 Este proyecto incluye varios endpoints a los que se puede acceder usando Postman. A continuación se describe cómo realizar cada solicitud.
 
@@ -184,7 +184,7 @@ Este proyecto incluye varios endpoints a los que se puede acceder usando Postman
 > [!IMPORTANT]
 > Asegúrate de usar el token correcto según el rol, ya que algunas acciones están restringidas a usuarios con rol `ADMIN`.
 
-## 🖥️ Tecnologías Usadas
+## 🖥️Tecnologías Usadas
 
 Este proyecto se construye utilizando una serie de tecnologías modernas que permiten la creación, gestión y despliegue de microservicios de forma eficiente:
 
