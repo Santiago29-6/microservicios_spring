@@ -10,8 +10,6 @@ Este proyecto implementa una arquitectura de microservicios con Spring Boot, don
 4. [Instalación y Configuración](#instalación-y-configuración)
 5. [Uso](#uso)
 6. [Tecnologías Usadas](#tecnologías-usadas)
-7. [Contribución](#contribución)
-8. [Licencia](#licencia)
 
 ## 📝Descripción del Proyecto
 
