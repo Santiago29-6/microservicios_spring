@@ -180,6 +180,7 @@ Este proyecto incluye varios endpoints a los que se puede acceder usando Postman
    - **Descripción**: Verifica el estado del servidor Eureka y los microservicios registrados.
 > [!IMPORTANT]
 > En cada solicitud que requiera autorización, debes incluir el token JWT obtenido en el inicio de sesión en los encabezados con el formato `Authorization: Bearer {token}`.
+
 > [!IMPORTANT]
 > Asegúrate de usar el token correcto según el rol, ya que algunas acciones están restringidas a usuarios con rol `ADMIN`.
 
