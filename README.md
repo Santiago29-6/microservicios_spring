@@ -184,7 +184,7 @@ Este proyecto incluye varios endpoints a los que se puede acceder usando Postman
 > [!IMPORTANT]
 > Asegúrate de usar el token correcto según el rol, ya que algunas acciones están restringidas a usuarios con rol `ADMIN`.
 
-## Tecnologías Usadas
+## 🖥️ Tecnologías Usadas
 
 Este proyecto se construye utilizando una serie de tecnologías modernas que permiten la creación, gestión y despliegue de microservicios de forma eficiente:
 
