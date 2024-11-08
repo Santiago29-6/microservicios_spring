@@ -38,7 +38,7 @@ Este sistema se divide en 4 microservicios que gestionan la información de inmu
 
 1. **Clona el repositorio**:
    ```bash
-   [git clone https://github.com/tu-usuario/nombre-del-repo.git](https://github.com/Santiago29-6/microservicios_spring.git)
+   [git clone -b master https://github.com/tu-usuario/nombre-del-repo.git](https://github.com/Santiago29-6/microservicios_spring.git)
 2. **Configura las bases de datos**
 
    - **Configuración de MySQL**: 
